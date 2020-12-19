@@ -1,0 +1,154 @@
+.topBar {
+  display: none;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  background-color: #f0f0f0;
+  justify-items: center;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+a {
+  transition: all 0.4s ease;
+}
+
+.logo {
+  max-height: 100%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.imgMobile {
+  display: block;
+  padding-left: 30px;
+}
+
+.navText {
+  padding-right: 35px;
+}
+
+.imgMobile {
+  display: none;
+}
+
+.topnav a:hover {
+  color: #388480;
+}
+
+.topnav a.active {
+  color: #000000;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.aligner {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 40px;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+    align-self: center;
+  }
+
+  .change .bar1 {
+    transform: rotate(-47deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .imgDesktop {
+    display: none;
+  }
+
+  .imgMobile {
+    display: block;
+  }
+
+  .logo {
+    max-height: 100%;
+    height: 100%;
+  }
+
+  .logo img {
+    width: 30%;
+  }
+
+  .topBar {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+  }
+
+  .topnav {
+    width: 100%;
+    display: block;
+    background-color: #f0f0f0;
+  }
+
+  .topnav.responsive {
+    background-color: #f0f0f0;
+  }
+
+  .topnav.responsive a.icon {
+    display: block;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 0%;
+    padding: 0%;
+  }
+
+  ul:first-child {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0%;
+  }
+
+  ul {
+    margin-top: 5px;
+    padding: 0%;
+  }
+
+  .topnav a.active {
+    background-color: #f0f0f0;
+    color: white;
+    font-size: 17px;
+    padding: 14px 14px 0px 14px;
+  }
+}

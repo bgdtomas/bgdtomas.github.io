@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perla Zone</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="body-perla.css" />
+    <link rel="stylesheet" href="nav-bar-perla.css" />
+    <link rel="stylesheet" href="gallery-perla.css" />
+  </head>
+
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <div class="topBar">
+        <a href="#home" class="active logo aligner">
+          <img class="imgMobile" src="Resources/LOGO.png" />
+        </a>
+        <a
+          id="button"
+          href="javascript:void(0);"
+          class="icon text aligner"
+          onclick="myFunction(this)"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>
+      </div>
+      <a href="#home" class="active logo aligner">
+        <img class="imgDesktop" src="Resources/LOGO2.png" />
+      </a>
+      <a href="#home" class="text">
+        <ul>
+          Home
+        </ul>
+      </a>
+      <a href="#about" class="navText text">
+        <ul>
+          About
+        </ul>
+      </a>
+      <a href="#gallery" class="navText text">
+        <ul>
+          Gallery
+        </ul>
+      </a>
+      <a href="#contact" class="navText text">
+        <ul>
+          Contact
+        </ul>
+      </a>
+      <a href="#about" class="navText text">
+        <ul>
+          FAQ
+        </ul>
+      </a>
+    </nav>
+
+    <section id="MySections">
+      <article id="home" class="banner">
+        <img src="Resources/BG.jpg" alt="Perlarte"/>
+      </article>
+
+      <article id="about" class="text">
+        <h1>Who is Perla ?</h1>
+        <p>Perla's bio goes here.</p>
+      </article>
+
+      <article id="gallery">
+        <h1 class="text">Gallery</h1>
+        <div class="gallery" >
+          <figure>
+            <img src="Resources/CAT.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/DAGA.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/EAGLE.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/EYES.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/JULIETTE.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/MONKEY.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/THOTH.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="Resources/EYE.jpg" alt="" />
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <script src="perla-zone.js"></script>
+  </body>
+</html>
