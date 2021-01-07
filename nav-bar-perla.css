@@ -3,16 +3,17 @@
 }
 
 .topnav {
+  z-index:2;
   position: fixed;
   top: 0;
-  background-color: #f0f0f0;
+  background-color: #e1dfdf;
   justify-items: center;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
-a {
+a:hover {
   transition: all 0.4s ease;
 }
 
