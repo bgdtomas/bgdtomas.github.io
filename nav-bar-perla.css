@@ -11,6 +11,8 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  left: 0%;
+  width: 100%;
 }
 
 a:hover {
