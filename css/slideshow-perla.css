@@ -35,3 +35,9 @@
 .prev{
     left: 0;
 }
+
+@media (max-width: 600px){
+  .faq{
+    font-size: 15px;
+  }
+}
