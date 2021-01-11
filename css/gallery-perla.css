@@ -44,6 +44,14 @@
     max-width: 1fr;
     position: relative;
   }
+  .slideshowGallery .prev {
+    left: 35px;
+    color: #f0f0f0;
+  }
+  .slideshowGallery .next {
+    right: 35px;
+    color: #f0f0f0;
+  }
 
   .slideshowGallery img {
     width: 100%;
@@ -52,7 +60,7 @@
     transition: transform 0.25s ease;
   }
 
-  .galleryImgs{
+  .galleryImgs {
     display: none;
   }
 }
