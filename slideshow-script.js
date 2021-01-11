@@ -34,7 +34,10 @@ showSlidesGallery(slideIndexGallery)
 
 // Next/previous controls
 function plusSlidesGallery(n) {
-  showSlidesGallery((slideIndexGallery += n));
+  if (screen.width <= 600){
+    showSlidesGallery((slideIndexGallery += n));
+
+  }
 }
 
 // Thumbnail image controls
