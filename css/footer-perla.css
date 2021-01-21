@@ -4,6 +4,19 @@
   background-color: #e1dfdf;
   left: 0%;
   width: 100%;
-  height: 150px;
+  height: 175px;
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footerLinks{
+  padding: 0%;
+}
+
+li{
+  margin: 10px 0;
+}
+.footerLogo{
+  padding-top: 30px;
 }

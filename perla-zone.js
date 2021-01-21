@@ -4,11 +4,13 @@ function myFunction(button) {
   if (x.className === "topnav") {
     x.className += " responsive";
     document.body.style.overflow = "hidden";
-    document.getElementById("MySections").style.display = "none";
+    document.getElementById("mySections").style.display = "none";
+    document.getElementById("footer").style.display = "none";
   } else {
     x.className = "topnav";
     document.body.style.overflow = "scroll";
-    document.getElementById("MySections").style.display = "block";
+    document.getElementById("mySections").style.display = "block";
+    document.getElementById("footer").style.display = "block";
   }
 }
 
