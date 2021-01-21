@@ -10,13 +10,17 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.footerLinks{
+.footerLinks {
   padding: 0%;
 }
 
-li{
+li {
   margin: 10px 0;
 }
-.footerLogo{
+
+.footerLogo {
   padding-top: 30px;
+}
+.fa-instagram {
+  color: black;
 }
