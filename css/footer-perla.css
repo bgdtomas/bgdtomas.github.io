@@ -8,16 +8,14 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0px 0px 0px;
 }
-
 .footerLinks {
   padding: 0%;
 }
-
 li {
   margin: 10px 0;
 }
-
 .footerLogo {
   padding-top: 30px;
 }
