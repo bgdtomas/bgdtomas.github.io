@@ -1,17 +1,48 @@
+.collapsibleSection {
+  margin: 0px 120px 0px 120px;
+}
+
 .faq {
   top: 0%;
   font-size: 25px;
   text-align: center;
-  display: none;
-  padding: 0px 10% 20px 10%;
+  display: block;
+  padding: 0px;
 }
 
-.slideshow {
-  display: block;
-  margin: 0px 120px 0px 120px;
-  max-width: 1fr;
-  position: relative;
-  background-color: #e1dfdf;
+.collapsibleButton {
+  background-color: #ccc;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .collapsibleButton:hover {
+  background-color: #f0f0f0;
+}
+
+.collapsibleButton:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.question {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .prev,
@@ -32,15 +63,15 @@
   right: 0;
 }
 
-.prev{
-    left: 0;
+.prev {
+  left: 0;
 }
 
-@media (max-width: 600px){
-  .faq{
+@media (max-width: 600px) {
+  .faq {
     font-size: 15px;
   }
-  .slideshow{
+  .slideshow {
     margin: 0px 40px 0px 40px;
   }
 }
