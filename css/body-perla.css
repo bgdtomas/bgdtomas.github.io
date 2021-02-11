@@ -22,20 +22,24 @@ section {
 }
 
 .banner {
-  width: 100%; /*any size*/
-  height: 70vh; /*any size*/
+  width: 100%;
+  height: 70vh;
 }
 
 
 .object-fit-cover {
   width: 100%;
   height: 100%;
-  object-fit: cover; /*magic*/
+  object-fit: cover;
 }
 
 
 @media (max-width: 600px) {
   .text {
     font-size: 30px;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
   }
 }
