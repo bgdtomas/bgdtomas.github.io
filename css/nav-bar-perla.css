@@ -91,6 +91,11 @@ a:hover {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
+  .navList{
+    display: none;
+    height: 100vh;
+  }  
+
   .imgDesktop {
     display: none;
   }
