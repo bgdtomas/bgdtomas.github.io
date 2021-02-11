@@ -8,7 +8,7 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 20px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }
 .footerLinks, .footerTags {
   padding: 0%;
@@ -27,12 +27,20 @@ li {
 }
 
 @media (max-width: 600px){
+  .footer{
+    display: grid;
+    grid-template-columns: none;
+  }
+  .footerLogo{
+    display: none;
+  }
   .footerLinksDesktop, .footerTags{
     display: none;
   }
   
   .footerLinksMobile{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
 }
