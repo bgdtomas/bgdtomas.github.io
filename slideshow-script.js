@@ -43,12 +43,14 @@ for (i = 0; i < acc.length; i++) {
 
 // //----------------------------------------------------------------
 
+var body = document.getElementsByTagName("body");
+
 var slideIndexGallery = 1;
 showSlidesGallery(slideIndexGallery);
 
 // Next/previous controls
 function plusSlidesGallery(n) {
-  if (screen.width <= 600) {
+  if (document.body.style.width <= 900) {
     showSlidesGallery((slideIndexGallery += n));
   }
 }

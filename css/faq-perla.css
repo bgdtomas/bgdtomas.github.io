@@ -40,7 +40,7 @@
 
 .question {
   padding: 0 18px;
-  background-color: white;
+  background-color: #f0f0f0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -50,12 +50,12 @@
   .faq {
     font-size: 15px;
   }
-  .slideshow {
-    margin: 0px 40px 0px 40px;
-  }
 
   .active, .collapsibleButton:after{
     content: none;
+  }
+  .collapsibleSection {
+    margin: 0px 50px 0px 50px;
   }
   
 }
