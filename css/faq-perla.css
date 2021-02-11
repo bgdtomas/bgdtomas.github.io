@@ -53,4 +53,9 @@
   .slideshow {
     margin: 0px 40px 0px 40px;
   }
+
+  .active, .collapsibleButton:after{
+    content: none;
+  }
+  
 }
