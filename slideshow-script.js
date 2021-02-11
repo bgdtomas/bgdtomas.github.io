@@ -43,7 +43,6 @@ for (i = 0; i < acc.length; i++) {
 
 // //----------------------------------------------------------------
 
-var body = document.getElementsByTagName("body");
 
 var slideIndexGallery = 1;
 showSlidesGallery(slideIndexGallery);

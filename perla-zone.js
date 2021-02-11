@@ -1,11 +1,19 @@
 function myFunction(button) {
   var x = document.getElementById("myTopnav");
-  button.classList.toggle("change");
+  var b = document.getElementById("button");
   if (x.className === "topnav") {
     x.className += " responsive";
+    b.className += " change";
+    document.body.style.overflow = "scroll";
+    document.getElementById("mySections").style.display = "none";
+    document.getElementById("footer").style.display = "none";
     document.getElementById("navList").style.display = "block";
   } else {
     x.className = "topnav";
+    b.classList.remove("change");
+    document.body.style.overflow = "scroll";
+    document.getElementById("mySections").style.display = "block";
+    document.getElementById("footer").style.display = "grid";
     document.getElementById("navList").style.display = "none";
   }
 }

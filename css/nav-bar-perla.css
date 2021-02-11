@@ -2,7 +2,7 @@
   display: none;
 }
 
-.topnav {
+.topnav, .navBarDesktop {
   z-index:2;
   position: fixed;
   top: 0;
@@ -21,6 +21,10 @@ a {
 .fas {
   color: black;
 }
+.navList{
+  display: none;
+  height: 100vh;
+}  
 
 a:hover {
   transition: all 0.4s ease;
@@ -89,6 +93,10 @@ a:hover {
 
   .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .navBarDesktop{
+    display: none;
   }
 
   .navList{
