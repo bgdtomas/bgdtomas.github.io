@@ -70,6 +70,10 @@ a:hover {
   display: block;
 }
 
+.topnav > section{
+  padding-top: 0%;
+}
+
 @media (max-width: 600px) {
   
   .bar1,
