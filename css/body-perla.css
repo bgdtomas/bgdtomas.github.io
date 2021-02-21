@@ -34,7 +34,7 @@ section {
   width: 30%;
 }
 .perlaFrame {
-  margin: 0 15% 0 1%;
+  margin: 0 20% 0 1%;
   height: 300px;
   width: 300px;
   float: right;
@@ -61,8 +61,8 @@ section {
   font-size: 2vw;
 }
 .projectInfo > p {
-  margin-right: 15%;
-  margin-left: 45%;
+  margin-right: 20%;
+  margin-left: 40%;
   text-align: left;
   font-size: 2vw;
 }
