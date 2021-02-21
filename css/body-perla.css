@@ -14,6 +14,11 @@ section {
   padding-top: 20px;
 }
 
+h1{
+  font-size: 4vw;
+  text-decoration: underline;
+}
+
 .text {
   color: #000000;
   text-decoration: none;
@@ -21,90 +26,82 @@ section {
   font-family: "Nanum Pen Script", cursive;
   align-self: center;
 }
-
-.perlaPicture {
-  margin: 0 1% 0 20%;
-  height: 300px;
-  width: 300px;
-  float: left;
-  display: block;
-}
-.perlaPicture img {
-  height: 30%;
-  width: 30%;
-}
-.perlaFrame {
-  margin: 0 20% 0 1%;
-  height: 300px;
-  width: 300px;
-  float: right;
-  display: block;
-}
-.perlaFrame img {
-  height: 30%;
-  width: 30%;
-}
-
 .banner {
   width: 100%;
   height: 70vh;
 }
-
-.perlaInfo {
-  margin: 0 auto;
-}
-
-.perlaInfo > p {
-  margin-left: 20%;
-  margin-right: 40%;
-  text-align: left;
-  font-size: 2vw;
-}
-.projectInfo > p {
-  margin-right: 20%;
-  margin-left: 40%;
-  text-align: left;
-  font-size: 2vw;
-}
-
 .object-fit-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.perlaInfo {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  margin: 0 20% 0 20%;
+}
+
+.perlaInfo p {
+  margin: 0 0 0 3%;
+  font-size: 2vw;
+  text-align: left;
+}
+
+.perlaPicture {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.projectInfo {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  margin: 0 20% 0 20%;
+}
+
+.projectInfo p {
+  margin: 0 3% 0 0;
+  font-size: 2vw;
+  text-align: left;
+}
+
+.perlaFrame {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 600px) {
-  .perlaPicture {
-    margin-left: 10%;
-    height: 200px;
-    width: 200px;
-    float: left;
-    display: block;
+  h1{
+    font-size: 30px;
   }
-  .perlaPicture img {
-    height: 30%;
-    width: 30%;
+  article,
+  section {
+    text-align: center;
+    padding-top: 0;
   }
-  .perlaFrame {
-    margin-right: 10%;
-    height: 200px;
-    width: 200px;
-    float: right;
-    display: block;
+  .perlaInfo {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0 20% 0 20%;
   }
-  .perlaFrame img {
-    height: 30%;
-    width: 30%;
-  }
-  .perlaInfo > p {
+  .perlaInfo p {
+    margin: 0 0 0 3%;
     font-size: 5vw;
-    margin-left: 10%;
-    margin-right: 10%;
+    text-align: left;
   }
-  .projectInfo > p {
-    margin-right: 10%;
-    margin-left: 10%;
+  .projectInfo {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0 20% 0 20%;
+  }
+  .projectInfo p {
+    margin: 0 3% 10% 0;
     font-size: 5vw;
+    text-align: left;
   }
   .text {
     font-size: 30px;
