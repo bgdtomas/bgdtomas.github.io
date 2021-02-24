@@ -93,6 +93,9 @@
   .faq {
     font-size: 15px;
   }
+  .question{
+    padding: 0;
+  }
   .perlaImgInsta{
     transform: rotate(360deg);
     max-width: 120px;
