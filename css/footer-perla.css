@@ -30,6 +30,7 @@ li {
   .footer{
     display: grid;
     grid-template-columns: none;
+    margin-top: 10%;
   }
   .footerLogo{
     display: none;

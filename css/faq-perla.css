@@ -21,11 +21,6 @@
   transition: 0.4s;
 }
 
-.active, .collapsibleButton:hover {
-  background-color: #f0f0f0;
-}
-
-
 .collapsibleButton:after {
   content: '\002B';
   color: #777;
@@ -39,23 +34,85 @@
 }
 
 .question {
-  padding: 0 18px;
+  padding: 0 150px;
   background-color: #f0f0f0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
+
+.perlaInsta {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  margin: 0 auto 0 auto;
+  justify-items: center;
+}
+.perlaMail {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  margin: 0 auto 0 auto;
+  justify-items: center;
+}
+
+.perlaImgMail{
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  animation: none;
+}
+.perlaImgMail:hover {
+  animation: pulse 2s ;
+  animation-fill-mode: forwards;
+}
+@keyframes pulse  {
+  50% {
+    transform: rotate(30deg);
+    max-width: 120px;
+  }
+  100% {
+    transform: rotate(-30deg);
+    max-width: 150px;
+  }
+}
+
+.perlaImgInsta{
+  border-radius: 50%;
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  transform: rotate(-180deg);
+  transition: max-width 2s, height 2s, transform 2s;
+}
+.perlaImgInsta:hover {
+  max-width: 150px;
+  transform: rotate(-360deg);
+}
+
 @media (max-width: 600px) {
   .faq {
     font-size: 15px;
   }
+  .perlaImgInsta{
+    transform: rotate(360deg);
+    max-width: 120px;
+  }
+  .perlaMail {
+    margin: 0 auto;
+  }
 
+  #contact h2{
+    font-size: 30px;
+  }
+
+  .perlaImgMail{
+    max-width: 120px;
+  }
   .active, .collapsibleButton:after{
     content: none;
   }
   .collapsibleSection {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px 50px 50px;
   }
   
 }

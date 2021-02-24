@@ -1,5 +1,6 @@
 .topBar {
   display: none;
+  justify-items: center;
 }
 
 .topnav, .navBarDesktop {
